@@ -1,4 +1,4 @@
-import { UserDetailScreen } from 'app/features/user/detail-screen'
+import { ChatScreen } from 'app/features/chat/chat-screen'
 import { Stack } from 'expo-router'
 import { useParams } from 'solito/navigation'
 
@@ -8,14 +8,14 @@ export default function Screen() {
     <>
       <Stack.Screen
         options={{
-          title: 'User',
+          title: 'Chat',
           presentation: 'modal',
           animation: 'slide_from_right',
           gestureEnabled: true,
           gestureDirection: 'horizontal',
         }}
       />
-      <UserDetailScreen id={id as string} />
+      <ChatScreen id={id as string} />
     </>
   )
 }

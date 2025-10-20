@@ -1,9 +1,9 @@
 'use client'
 
-import { UserDetailScreen } from 'app/features/user/detail-screen'
+import { ChatScreen } from 'app/features/chat/chat-screen'
 import { useParams } from 'solito/navigation'
 
 export default function Page() {
   const { id } = useParams()
-  return <UserDetailScreen id={id as string} />
+  return <ChatScreen id={id as string} />
 }
